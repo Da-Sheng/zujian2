@@ -1,0 +1,117 @@
+@charset "utf-8";
+body,ul,li,a{margin: 0;padding: 0;}
+#banner{
+	width: 100%;
+	height: 440px;
+	/*overflow: hidden;*/
+}
+#innerBanner_img{
+	width: 100%;
+	z-index: -1;
+}
+#innerBanner_img>li{
+	width: 100%;
+	height: 440px;
+	display: block;
+	opacity: 0;
+	transition: opacity 1s linear; 
+}
+#innerBanner_img li a{
+	height: 440px;
+	width:100%;
+	background-repeat: no-repeat;
+	display: block;
+	margin: 0 auto;
+}
+#innerBanner_img li>a{
+	background-position: center top;
+	background-size: cover;
+}
+/*#innerBanner_img li:nth-of-type(1) a{
+	background-image: url(../img/banner_1.jpeg);
+	
+}
+#innerBanner_img li:nth-of-type(2) a{
+	background-image: url(../img/banner_2.jpeg);
+}
+#innerBanner_img li:nth-of-type(3) a{
+	background-image: url(../img/banner_3.jpeg);
+}
+#innerBanner_img li:nth-of-type(4) a{
+	background-image: url(../img/banner_4.jpeg);
+}
+#innerBanner_img li:nth-of-type(5) a{
+	background-image: url(../img/banner_5.jpeg);
+}
+#innerBanner_img li:nth-of-type(6) a{
+	background-image: url(../img/banner_6.jpeg);
+}
+#innerBanner_img li:nth-of-type(7) a{
+	background-image: url(../img/banner_1.jpeg);
+}*/
+/*导航点*/
+#innerBanner_point{
+	display: block;
+	height: 20px;
+	background-color: rgba(255,255,255,0.1);
+	bottom: 60px;
+	left: 830px;
+	border-radius:20px ;
+	padding-bottom: 4px;
+}
+#innerBanner_point li{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: rgba(184,134,11,0.5);
+	margin:4px 5px;
+	cursor: pointer;
+}
+.changeOpacity{
+	opacity: 1 !important;
+}
+.changeOpacity2{
+	background: rgba(184,134,11,1) !important;
+}
+
+#bannerUpDown{
+	display: block;
+	width: 720px;
+	height: 440px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#bannerUpDown ul{
+	margin: 380px 275px;
+}
+#bannerUpDown01{
+	width: 720px;
+	height: 100px;
+	top: -100px;
+	left: 50%;
+	margin-left: -360px;
+}
+#bannerUpDown01:hover div{
+	opacity: 0.6;
+}
+#bannerUpDown01 div{
+	width: 40px;
+	height: 100px;
+	background-image: url(../img/sprite.png);
+	margin-top: 220px;
+	opacity: 0;
+	transition: opacity 0.3s linear; 
+}
+#bannerUpDown01 div:nth-of-type(1){
+	float: left;
+	cursor: w-resize;
+	}
+#bannerUpDown01 div:nth-of-type(2){
+	float: right;
+	background-position-x: -55px;
+	cursor: e-resize;
+}
+.changeDivOpacity{
+	opacity: 0.6 !important;
+}

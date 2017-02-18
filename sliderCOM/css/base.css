@@ -1,0 +1,110 @@
+﻿/*-----------------------------全局样式-------------------------------------*/
+@charset "utf-8"; 
+body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea {margin:0; padding:0; border: 0;}
+ol, ul ,li{list-style: none;} 
+img {border: 0;} 
+a img,img{border: 0;vertical-align: middle;}
+a {text-decoration: none; color:#333}
+a:hover {color:#F60}
+a:focus {outline-style: none;}
+a,area {blr: expression(this.onFocus = this.blur () );}/*按下鼠标图片周边不会出现虚线，这个适合所有的浏览器*/
+ul li {list-style: none;}
+
+.clearfix:after{content: "";clear:both;display: block; height: 0; visibility: hidden;}
+.clearfix{zoom:1;}
+.dis{display:block;} 
+.undis{display:none;}
+.form input{float: left;}
+/*-- div居左居右 --*/
+.left{ float:left}
+.right{ float:right}
+/*-- 1像素灰色边框 --*/
+.border{ border:1px solid red}
+.border01{ border:1px solid #efe9ed}
+.borderbr{ border-bottom:1px solid #c0a4b7; border-right:1px solid #c0a4b7}
+.bordertl{ border-top:1px solid #c0a4b7; border-left:1px solid #c0a4b7}
+.borderbottom{ border-bottom:1px dashed #b7b7b7;}
+.borderbottomgray{ border-bottom:1px solid #ccc;}
+/*-- 背景颜色 --*/
+.background{ background:#000}
+.background01{ background:#e5e5e5}
+.background02{ background:#dadada}
+.background03{ background:#191919}
+.bge7f5df{ background:#e7f5df;}
+/*-- 内间距 --*/
+.pad15{ padding:15px;}
+.pad10{ padding:10px}
+.pt{ padding-top:15px}
+.pad5{padding:5px;}
+.pr{ padding-right:10px}
+.pb{ padding-bottom:10px}
+.pb01{ padding-bottom:15px}
+.pl{ padding-left:10px}
+.pt30{padding-top:30px;}
+/*-- 外间距 --*/
+.margin{ margin:0 auto}
+.margin01{margin:30px auto}
+.mlr20{ margin:0 20px;}
+.mt{ margin-top:10px;}
+.mt50{ margin-top:50px;}
+.mr{ margin-right:10px;}
+.mb{ margin-bottom:10px;}
+.ml{ margin-left:10px;}
+.mb15{margin-bottom:15px;}
+
+/*-- 字体颜色 --*/
+.red{ color:#c7051c;}
+.red a{ color:#7f3a45}
+.red a:hover{ color:#4c4c4c}
+.orange{ color:#f19212}
+.white{ color:#fff}
+.gray{ color:#666}
+.color333{color:#333;}
+.color99 { color: #999999;}
+.color66 { color: #666666;}
+.color00 {color: #010000;}
+.black{ color:#000}
+.green{ color:#0c514c}
+/*-- 字体大小 --*/
+.f10{ font-size:10px;}
+.f12{ font-size:12px}
+.f14{ font-size:14px}
+.f16{ font-size:16px}
+.f20{ font-size:20px}
+.f30{ font-size:30px}
+.f40{ font-size:40px}
+/*-- 字体加粗 --*/
+.fbold{ font-weight:bold}
+/*-- 文字位置 --*/
+.tr{text-align:right}
+.tc{text-align:center}
+.tl{text-align:left}
+/*-- 阴影 --*/
+.shadow{-webkit-box-shadow:#ccc 0px 0px 8px;-moz-box-shadow:#ccc 0px 0px 8px;box-shadow:#ccc 0px 0px 8px;behavior: url(/PIE.htc);}
+/*-- 圆角 --*/
+.radius{border-radius:10px;}
+/*-- form --*/
+.input,.select,.textarea{line-height:24px;}
+.button{ background:#f4708d; width:80px; height:23px;}
+.button01{background: url(../images/coin.png) 0 -125px no-repeat;width:78px;height:23px;}
+.button02{background: url(../images/coin.png) 0 -163px no-repeat;width:125px;height:23px;}
+/*-- 表格 --*/
+.table{ font-size:14px}
+.table th{ background:#eee;}
+/*-- 行高 --*/
+.lh23{ line-height:23px;}
+.lh26{ line-height:26px;}
+.lh28{ line-height:28px;}
+.lh37{ line-height:37px;}
+.lh40{ line-height:40px;}
+.lh45{ line-height:45px;}
+/*-- 注释 --*/
+.annotation{ border:1px solid #f0e0cc; padding:0 5px; color:#6a461c;}
+
+/*-- 外框宽度 --*/
+.relative{ position:relative;}
+
+/*-- css3 --*/
+.t3out {transition: all 0.3s ease-out 0s;}
+.posAbs{position: absolute;}
+.posRea{position: relative;}
