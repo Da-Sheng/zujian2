@@ -23,37 +23,52 @@
 			td{
 				text-align: center;
 			}
+			fieldset{
+				width: 1000px;
+				margin: 0 auto;
+			}
 		</style>
 	</head>
 	<body>
-		<table id="bookLib">
-			<tr>
-				<th>ID</th>
-				<th>书名</th>
-				<th>作者</th>
-				<th>价格</th>
-				<th>操作</th>
-				<th>数量</th>
-				<th>总额</th>
-			</tr>
-			<tr v-for="(book,index) in books">
-				<td>{{book.id}}</td>
-				<td>{{book.name}}</td>
-				<td>{{book.author}}</td>
-				<td>{{book.price}}</td>
-				<td>
-					<button @click=bookHandle(index,true)>添加</button>
-					<button @click=bookHandle(index,false)>删除</button>
-				</td>
-				<td>{{book.amount}}</td>
-				<td>{{book.singleAllPrice}}</td>
-			</tr>
-			<tr>
-				<td colspan="6"></td>
-				<td>{{allPrice}}</td>
-			</tr>
-		</table>
-
+		<div id="bookLib">
+			{<table>
+				<tr>
+					<th>ID</th>
+					<th>书名</th>
+					<th>作者</th>
+					<th>价格</th>
+					<th>操作</th>
+					<th>数量</th>
+					<th>总额</th>
+				</tr>
+				<tr v-for="(book,index) in books">
+					<td>{{book.id}}</td>
+					<td>{{book.name}}</td>
+					<td>{{book.author}}</td>
+					<td>{{book.price}}</td>
+					<td>
+						<button @click=bookHandle(index,true)>加一</button>
+						<button @click=bookHandle(index,false)>减一</button>
+						<button @click=removeBook(index)>移除本书</button>
+					</td>
+					<td>{{book.amount}}</td>
+					<td>{{book.singleAllPrice}}</td>
+				</tr>
+				<tr>
+					<td colspan="6"></td>
+					<td>{{allPrice}}</td>
+				</tr>
+			</table>
+			<fieldset id="">
+				<legend>添加新书</legend>
+				<p>书名:<input type="text" v-model="newBook.id"/></p>
+				<p>书名:<input type="text" v-model="newBook.name"/></p>
+				<p>作者:<input type="text" v-model="newBook.author"/></p>
+				<p>价格:<input type="text" v-model="newBook.price"/></p>
+				<p><button @click=addBook>添加</button></p>
+				
+			</fieldset>
+		</div>
 		<script type="text/javascript" src="js/buyCar.js">
 			
 		</script>
